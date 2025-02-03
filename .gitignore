@@ -1,0 +1,12 @@
+# Node.js dependencies
+node_modules/
+
+# Environment variables
+.env
+.env.*
+.env.local
+.env.*.local
+
+# Build artifacts
+dist/
+.DS_Store
