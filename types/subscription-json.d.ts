@@ -15,7 +15,7 @@ export type SubscriptionJson = {
     currencyCode: CurrencyCode;
     billingCycle: SubscriptionBillingCycle;
     previouslyPrepaidMonths: number;
-    firstBilledAt: ISODateString;
+    firstBilledAt: ISODateString | null;
     nextBilledAt: ISODateString | null;
     items: SubscriptionItem[];
     discount: SubscriptionDiscount | null;
