@@ -1,3 +1,4 @@
 export type Test = {
-    test: 'test'
+    test: 'test',
+    whatever: 'whatever',
 }
