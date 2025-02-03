@@ -5,6 +5,7 @@ import {SubscriptionDiscount} from './subscription-discount';
 import {SubscriptionItem} from './subscription-item';
 import {SubscriptionBillingCycle} from './subscription-billing-cycle';
 import {SubscriptionScheduledChange} from './subscription-scheduled-change';
+import {SubscriptionBillingPeriod} from './subscription-billing-period';
 
 export type SubscriptionJson = {
     lastEventOccurredAt: ISODateString;
@@ -17,6 +18,7 @@ export type SubscriptionJson = {
     previouslyPrepaidMonths: number;
     firstBilledAt: ISODateString | null;
     nextBilledAt: ISODateString | null;
+    currentBillingPeriod: SubscriptionBillingPeriod | null;
     items: SubscriptionItem[];
     discount: SubscriptionDiscount | null;
     scheduledChange: SubscriptionScheduledChange | null;
