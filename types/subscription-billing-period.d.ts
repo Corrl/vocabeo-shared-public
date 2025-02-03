@@ -1,4 +1,6 @@
+import {ISODateString} from './_primitives/iso-date-string';
+
 export type SubscriptionBillingPeriod = {
-    startsAt: string;
-    endsAt: string;
+    startsAt: ISODateString;
+    endsAt: ISODateString;
 }
